@@ -11,6 +11,7 @@ Feature: Create Group
     And I click on the admin panel
     Then I should be on the admin panel page
     And I click on the groups tab
+    Then I should be on the groups page
     And I click on the create group button
     And I enter group name <groupName>
     And I enter group description <groupDescription>
@@ -21,8 +22,8 @@ Feature: Create Group
     When I click on the create group button
     Then i should see the group created successfully
     Examples:
-      | email             | password  | groupName | groupDescription | year | maxCapacity | startDate  | endDate    |
-      | admin@gmail.com   | @12345678 | some name | some description | 2026 |  65456      |  05182026  |  05182027  |
+      | email             | password  | groupName       | groupDescription          | year | maxCapacity | startDate  | endDate    |
+      | admin@gmail.com   | @12345678 | Katlego's Group | Group Created by KatlegoM | 2026 |  65456      |  0005182026  |  0005182027  |
 
 
 
